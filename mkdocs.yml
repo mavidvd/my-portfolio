@@ -13,6 +13,8 @@ theme:
     - navigation.tabs.sticky # Keeps tabs visible when scrolling
     - navigation.top         # Back to top button
 
+plugins: [] # Since searchbox is not included, there will be no searchbox.
+
 nav:
   - Home: index.md
   - About: about.md
