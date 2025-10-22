@@ -1,3 +1,57 @@
+/* === Custom Logo and Header Styling === */
+
+/* Set the background color of the entire header */
+.md-header {
+    background-color: #142F5A; /* Replace with the HEX code of your desired background color */
+                             /* Example: For your current 'slate' scheme, this is typically a deep grey/blue grey.
+                                You can use an online color picker tool on your logo to get the exact HEX code. */
+    height: 100px;
+}
+/* --- Center the Logo Horizontally and Vertically --- */
+
+.md-content,
+.md-content__inner {
+    padding-top: 0 !important;
+}
+.md-content__inner h1:first-child {
+    margin-top: 0;
+}
+
+/* Target the header container that holds the logo */
+.md-header__inner {
+    /* Center the contents (logo container) horizontally */
+    justify-content: center;
+}
+
+/* Hide the site name/title next to the logo (since you only want the logo) */
+.md-header__title {
+    display: none;
+}
+
+/* --- Control the Logo Image Size --- */
+/* Target the logo container and center the image inside it */
+.md-header__button.md-logo {
+    /* Ensure the container takes the full height of the header */
+    height: 100%;
+    
+    /* Center the logo image inside its own button container */
+    display: flex;
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering (if needed) */
+}
+
+/* Target the logo image itself and set its desired size */
+.md-header__button.md-logo img {
+    height: 90px;  /* Make the logo bigger. ADJUST THIS VALUE (e.g., 60px, 100px) */
+    width: auto;   /* Maintain aspect ratio */
+    object-fit: contain;
+}
+
+/* If you also want to remove the site name text and only show the logo */
+.md-header__title {
+    display: none;
+}
+
 /* Move navigation tabs to the right */
 .md-tabs__list {
   justify-content: flex-end !important;
@@ -15,18 +69,8 @@
 
 /* Make site name bigger */
 .md-header__title {
-  font-size: 2rem !important;  /* Adjust size as needed */
+  font-size: 1rem !important;  /* Adjust size as needed */
   font-weight: 700;            /* Make it bold */
-}
-
-/* Fix extra space above the title on sub-pages (like Contact) */
-.md-content__inner {
-    padding-top: 0 !important;
-}
-
-/* Ensure the first heading doesn't add its own massive top margin */
-.md-content__inner h1:first-child {
-    margin-top: 0;
 }
 
 /* Optional: Adjust on mobile */

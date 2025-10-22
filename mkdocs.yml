@@ -3,14 +3,15 @@ site_url: https://davidmagraner.com
 
 theme:
   name: material
-  logo: site/img/blue_logo.png
+  logo: /img/blue_logo.png
+  icon:
+    logo: '' # Set logo icon to an empty string
   palette:
     # Dark professional scheme
     scheme: slate
     primary: blue grey
     accent: cyan
   features:
-    - navigation.tabs        # Puts nav in top bar
     - navigation.tabs.sticky # Keeps tabs visible when scrolling
     - navigation.top         # Back to top button
 

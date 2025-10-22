@@ -93,17 +93,13 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 /* Existing styles remain the same */
 form {
   max-width: 600px;
-  margin: 2rem 0;
 }
 label {
   display: block;
-  margin: 1rem 0;
   font-weight: bold;
 }
 input, textarea {
   width: 100%;
-  padding: 0.5rem;
-  margin-top: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   background: #1e1e1e;
