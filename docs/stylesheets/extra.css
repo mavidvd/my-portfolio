@@ -1,9 +1,27 @@
 /* Move navigation tabs to the right */
-.md-tabs {
-  justify-content: flex-end;
+.md-tabs__list {
+  justify-content: flex-end !important;
 }
 
 /* Optional: Adjust tab spacing */
 .md-tabs__item {
   margin-left: 1rem;
+}
+
+/* If site name is showing on the left, this adds space */
+.md-tabs {
+  justify-content: space-between;
+}
+
+/* Make site name bigger */
+.md-header__title {
+  font-size: 2rem !important;  /* Adjust size as needed */
+  font-weight: 700;            /* Make it bold */
+}
+
+/* Optional: Adjust on mobile */
+@media screen and (max-width: 76.1875em) {
+  .md-header__title {
+    font-size: 1.5rem !important;
+  }
 }
