@@ -19,6 +19,10 @@
   font-weight: 700;            /* Make it bold */
 }
 
+.md-content__inner .md-typeset h1:first-child {
+    margin-top: 0em;
+}
+
 /* Optional: Adjust on mobile */
 @media screen and (max-width: 76.1875em) {
   .md-header__title {
