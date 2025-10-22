@@ -19,8 +19,14 @@
   font-weight: 700;            /* Make it bold */
 }
 
-.md-content__inner .md-typeset h1:first-child {
-    margin-top: 0em;
+/* Fix extra space above the title on sub-pages (like Contact) */
+.md-content__inner {
+    padding-top: 0 !important;
+}
+
+/* Ensure the first heading doesn't add its own massive top margin */
+.md-content__inner h1:first-child {
+    margin-top: 0;
 }
 
 /* Optional: Adjust on mobile */

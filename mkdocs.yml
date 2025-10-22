@@ -3,6 +3,7 @@ site_url: https://davidmagraner.com
 
 theme:
   name: material
+  logo: site/img/blue_logo.png
   palette:
     # Dark professional scheme
     scheme: slate
