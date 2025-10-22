@@ -1,0 +1,9 @@
+/* Move navigation tabs to the right */
+.md-tabs {
+  justify-content: flex-end;
+}
+
+/* Optional: Adjust tab spacing */
+.md-tabs__item {
+  margin-left: 1rem;
+}
