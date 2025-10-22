@@ -1,31 +1,33 @@
+# Book a call.
+
+<!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/davidmagraner/30min'});return false;">Schedule a call with me.</a>
+
 # Get in touch!
-
-Let's Talk about Data! Always glad to hear from you.
-
-# Contact Me
-
 <form id="contact-form" action="https://formspree.io/f/mnngkdjo" method="POST">
   <input type="hidden" name="_subject" id="email-subject">
   
-  <label>
-    Your name:
-    <input type="text" name="name" id="name-input" required>
-  </label>
+  <div class="form-row">
+    <label for="name-input">Your name:</label>
+    <input type="text" name="name" id="name-input" required placeholder="Enter your name">
+  </div>
   
-  <label>
-    Your email:
-    <input type="email" name="email" id="email-input" required>
-  </label>
+  <div class="form-row">
+    <label for="email-input">Your email:</label>
+    <input type="email" name="email" id="email-input" required placeholder="name@example.com">
+  </div>
   
-  <label>
-    Subject:
-    <input type="text" name="subject" id="subject-input" required>
-  </label>
+  <div class="form-row">
+    <label for="subject-input">Subject:</label>
+    <input type="text" name="subject" id="subject-input" required placeholder="What are you interested in?">
+  </div>
   
-  <label>
-    Your message:
-    <textarea name="message" id="message-input" required></textarea>
-  </label>
+  <div class="form-row">
+    <label for="message-input">Your message:</label>
+    <textarea name="message" id="message-input" required placeholder="Tell me about your project..."></textarea>
+  </div>
   
   <button type="submit">Send</button>
 </form>
@@ -93,23 +95,61 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 /* Existing styles remain the same */
 form {
   max-width: 600px;
+  
+  /* 👇 CHANGE 1: Remove text-align: center (no longer needed here) */
+  /* text-align: center; */
+  
+  /* 👇 ADD THIS RULE to center the entire form block on the page */
+  margin-left: auto;
+  margin-right: 14rem;
 }
-label {
-  display: block;
+
+/* New rule for the container div */
+.form-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+/* Style the label (the text on the left) */
+.form-row label {
+  color: #E0A465;  
   font-weight: bold;
+  min-width: 150px; 
+  padding-top: 10px;
 }
+
+/* Style the inputs (the boxes on the right) */
 input, textarea {
-  width: 100%;
+  flex-grow: 1; 
+  padding: 0.7rem;
+  margin-top: 0;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 15px;
   background: #1e1e1e;
   color: #fff;
+  transition: border-color 0.3s;
 }
+
 textarea {
-  min-height: 150px;
+  min-height: 120px;
 }
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #1976d2;
+}
+
+label {
+  display: inline-block;
+}
+
 button {
-  background: #1976d2;
+  /* 👇 CHANGE 2: Center the button's text/content (optional, but good practice) */
+  display: block; 
+  margin: 15px auto 0 auto; /* Sets top margin to 15px, and auto left/right margin for centering */
+  
+  background: #142F5A;
   color: white;
   padding: 0.75rem 2rem;
   border: none;
@@ -118,6 +158,6 @@ button {
   font-size: 1rem;
 }
 button:hover {
-  background: #1565c0;
+  background: #09386dff;
 }
 </style>

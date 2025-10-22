@@ -1,5 +1,3 @@
-# David Magraner Villalba
-
 Welcome to my portfolio!
 
 ## About Me

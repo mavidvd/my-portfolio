@@ -3,9 +3,8 @@ site_url: https://davidmagraner.com
 
 theme:
   name: material
+  custom_dir: overrides
   logo: /img/blue_logo.png
-  icon:
-    logo: '' # Set logo icon to an empty string
   palette:
     # Dark professional scheme
     scheme: slate
@@ -21,7 +20,14 @@ nav:
   - Home: index.md
   - About: about.md
   - Projects: projects.md
-  - Contact: contact.md
+  - Contact & Scheduling: contact.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin 
+      link: https://www.linkedin.com/in/davidmagraner/ 
+    - icon: fontawesome/brands/github 
+      link: https://github.com/mavidvd
 
 extra_css:
   - stylesheets/extra.css

@@ -5,7 +5,7 @@
     background-color: #142F5A; /* Replace with the HEX code of your desired background color */
                              /* Example: For your current 'slate' scheme, this is typically a deep grey/blue grey.
                                 You can use an online color picker tool on your logo to get the exact HEX code. */
-    height: 100px;
+    height: 120px;
 }
 /* --- Center the Logo Horizontally and Vertically --- */
 
@@ -15,6 +15,17 @@
 }
 .md-content__inner h1:first-child {
     margin-top: 0;
+    padding-top: 0 !important;
+}
+
+.md-content h1, 
+.md-content h2, 
+.md-content h3{
+    /* Replace #FFC107 with your desired HEX color code */
+    color: #E0A465; 
+    font-weight: bold;
+    margin-top: 30px;    /* Extra space BEFORE the H1 */
+    margin-bottom: 15px;
 }
 
 /* Target the header container that holds the logo */
@@ -25,7 +36,27 @@
 
 /* Hide the site name/title next to the logo (since you only want the logo) */
 .md-header__title {
-    display: none;
+    /* Create the necessary space on the left */
+    margin-left: 20rem; /* Keeps your logo block away from the edge */
+    margin-right: 40rem;
+    /* Allows the title block to take up available space, but not push the social links */
+    flex-grow: 1; 
+}
+
+/* The social links are usually injected near the header nav or as a standalone option */
+.md-header-nav,
+.md-header__option {
+    /* Ensures the right-side elements don't shrink */
+    flex-shrink: 0; 
+}
+
+/* Ensure social icons are visible (from previous steps) */
+.md-header__option > .md-social {
+    display: flex !important;
+}
+
+.md-sidebar--secondary {
+    display: none !important; /* Use !important to override theme styles */
 }
 
 /* --- Control the Logo Image Size --- */
@@ -42,7 +73,7 @@
 
 /* Target the logo image itself and set its desired size */
 .md-header__button.md-logo img {
-    height: 90px;  /* Make the logo bigger. ADJUST THIS VALUE (e.g., 60px, 100px) */
+    height: 100px;  /* Make the logo bigger. ADJUST THIS VALUE (e.g., 60px, 100px) */
     width: auto;   /* Maintain aspect ratio */
     object-fit: contain;
 }
@@ -78,4 +109,22 @@
   .md-header__title {
     font-size: 1.5rem !important;
   }
+}
+
+/* --- Center the Footer Text --- */
+.md-footer-meta__inner {
+    /* Set the parent container of the copyright text to use Flexbox */
+    display: flex; 
+    /* Center the contents (the copyright div) horizontally */
+    justify-content: center;
+}
+
+/* --- Style the Copyright Text (Make it Smaller) --- */
+.md-footer-copyright {
+    /* Center the text itself within its container */
+    text-align: center;
+    /* Reduce the font size (14px is a common size for footers) */
+    font-size: 13px; 
+    /* You may also adjust font-weight if desired */
+    /* font-weight: 300; */
 }
