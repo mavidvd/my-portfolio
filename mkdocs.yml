@@ -13,14 +13,23 @@ theme:
   features:
     - navigation.tabs.sticky # Keeps tabs visible when scrolling
     - navigation.top         # Back to top button
+  icon:
+    repo: fontawesome/fontawesome
 
 plugins: [] # Since searchbox is not included, there will be no searchbox.
 
+markdown_extensions:
+  - attr_list  # This is usually the key fix
+  - md_in_html # This is often required if you mix Markdown and HTML like this
+
 nav:
-  - Home: index.md
-  - About: about.md
-  - Projects: projects.md
-  - Contact & Scheduling: contact.md
+  - About Me: index.md
+  - My Data Career: career.md
+  - Projects: 
+    - ProjectA: project1.md
+    - ProjectB: project2.md
+    - ProjectC: project3.md
+  - Contact & Links: contact.md
 
 extra:
   social:
@@ -31,3 +40,4 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/cv.css

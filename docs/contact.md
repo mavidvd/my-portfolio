@@ -1,9 +1,38 @@
-# Book a call.
+# Book a call or connect with me.
 
-<!-- Calendly link widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/davidmagraner/30min'});return false;">Schedule a call with me.</a>
+<div style="text-align: center; 
+            margin-top: 1.5em; 
+            margin-bottom: 1.5em;
+            margin-right: 6em;
+            /* CRUCIAL STYLES BELOW */
+            display: flex; 
+            justify-content: center;
+            flex-wrap: wrap; /* Allows tags to wrap if screen is small */
+            gap: 15px; /* Sets space between items */
+            ">
+
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+    <a href="" 
+       onclick="Calendly.initPopupWidget({url: 'https://calendly.com/davidmagraner/30min'});return false;" 
+       class="tag">
+        <span>Book a 30' Call</span>
+    </a>
+    
+    <a href="https://www.linkedin.com/in/davidmagraner/" 
+       target="_blank" 
+       class="tag">
+        <i class="fab fa-linkedin"></i> Connect on LinkedIn
+    </a>
+    
+    <a href="https://github.com/mavidvd" 
+       target="_blank" 
+       class="tag">
+        <i class="fab fa-github"></i> View My GitHub
+    </a>
+
+</div>
 
 # Get in touch!
 <form id="contact-form" action="https://formspree.io/f/mnngkdjo" method="POST">
@@ -101,7 +130,7 @@ form {
   
   /* 👇 ADD THIS RULE to center the entire form block on the page */
   margin-left: auto;
-  margin-right: 14rem;
+  margin-right: 8rem;
 }
 
 /* New rule for the container div */
@@ -132,7 +161,7 @@ input, textarea {
 }
 
 textarea {
-  min-height: 120px;
+  min-height: 80px;
 }
 
 input:focus, textarea:focus {

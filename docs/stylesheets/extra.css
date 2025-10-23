@@ -12,6 +12,7 @@
 .md-content,
 .md-content__inner {
     padding-top: 0 !important;
+    width: 820px;
 }
 .md-content__inner h1:first-child {
     margin-top: 0;
@@ -27,6 +28,7 @@
     margin-top: 30px;    /* Extra space BEFORE the H1 */
     margin-bottom: 15px;
 }
+
 
 /* Target the header container that holds the logo */
 .md-header__inner {
@@ -102,6 +104,21 @@
 .md-header__title {
   font-size: 1rem !important;  /* Adjust size as needed */
   font-weight: 700;            /* Make it bold */
+}
+
+ Tag setup
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Space between tags */
+}
+.tag {
+    background-color: #e6e6fa; /* Light purple */
+    color: #333;
+    padding: 4px 12px;
+    border-radius: 16px; /* Pill shape */
+    font-size: 0.9em;
+    font-weight: 500;
 }
 
 /* Optional: Adjust on mobile */

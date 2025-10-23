@@ -1,0 +1,113 @@
+/* --- Base Structure and Typography --- */
+
+
+/* --- New Rule: Targets ONLY the CV container on the CV page --- */
+.cv-page-container {
+    max-width: 800px;
+    align:center;
+    color: #f0f0f0 !important;
+}
+
+.job-box {
+    color: #ffffff; /* A slightly lighter shade of the background for contrast */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 20px; /* Space between the page title and the first box */
+    margin-bottom: 20px; /* Space between job boxes */
+    border: 1px solid #55595f; /* A small, visible, light gray border */
+}
+
+h2 {
+    /* "Professional Experience" title */
+    border-bottom: 2px solid #333; /* Dark separator line */
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* --- Experience Entry Container --- */
+.experience-entry {
+    margin-bottom: 10px; /* Space between different jobs */
+    padding-bottom: 5px;
+}
+
+/* --- Header Row (Title and Dates) --- */
+.header-row {
+    display: flex;
+    justify-content: space-between; /* Pushes content to opposite ends */
+    align-items: flex-start;
+}
+
+.job-title {
+    font-size: 1.25em;
+    font-weight: 700; /* Bold title */
+    margin-top: 0 !important; /* Forces removal of space above the title */
+    margin-bottom: 0 !important; /* Forces removal of space above the title */
+    margin: 0;
+    color: #E0A465 !important; /* Dark color for titles */
+}
+
+.location-date {
+    font-size: 0.9em;
+    font-weight: normal;
+    text-align: right;
+    line-height: 1.4;
+    color: #f0f0f0 !important; /* Slightly muted color for location/date */
+}
+
+/* --- Company Name and Sub-Info --- */
+.company-subinfo {
+    font-size: 1em;
+    font-weight: 600; /* Slightly bold for company name */
+    color: #f0f0f0 !important;
+    margin: 3px 0 10px 0; /* Space below company name */
+}
+
+/* --- Skills Line --- */
+.skills-line {
+    font-size: 0.9em;
+    margin: 0 0 10px 0;
+    color: #f0f0f0 !important;
+}
+
+.skills-label {
+    font-weight: bold;
+    color: #f0f0f0 !important;
+}
+
+/* Button Settings */
+
+.download-button {
+    /* Color and Background */
+    background-color: var(--md-accent-fg-color); /* The theme's highlight color (e.g., blue/teal) */
+    color: var(--md-accent-bg-color) !important; /* White text for high contrast */
+    border-color: var(--md-accent-fg-color) !important; /* Matching border color */
+    
+    /* Size and Font */
+    font-size: 1.1em !important;
+    padding: 0.75em 1.5em !important;
+    
+    /* Ensure icon color matches the text */
+    text-shadow: none; 
+}
+
+/* Hover Effect - Optional, but recommended for feedback */
+.download-button:hover {
+    background-color: var(--md-accent-fg-color); /* Keep the background solid */
+    filter: brightness(1.2); /* Make it slightly brighter on hover */
+}
+
+/* --- Bullet Points (List) --- */
+.duties-list {
+    list-style: disc; /* Standard filled circle bullet */
+    margin: 5px 0 0 20px; /* Adjust left margin for proper indentation */
+    padding-left: 0;
+}
+
+.duties-list li {
+    font-size: 0.95em;
+    margin-bottom: 6px; /* Space between bullet points */
+    line-height: 1.4;
+    color: #d0d0d0 !important;
+}
