@@ -118,14 +118,26 @@
     display: flex;
     align: center;
     gap: 8px; /* Space between tags */
+    margin-bottom: 8px;
 }
 .tag {
     background-color: #e6e6fa; /* Light purple */
-    color: #333;
+    color: #142F5A;
     padding: 4px 12px;
     border-radius: 16px; /* Pill shape */
     font-size: 0.9em;
     font-weight: 500;
+}
+
+a.tag {
+    /* Set the background color */
+    background-color: #142F5A !important; 
+    /* Set the text color for contrast */
+    color: #ffffff !important; 
+    /* Remove any default text decorations for links */
+    text-decoration: none; 
+    /* Ensure the link behaves like a block element for the padding/style to apply */
+    display: inline-block; 
 }
 
 /* Optional: Adjust on mobile */
