@@ -1,8 +1,8 @@
 # Data Career
 
 <div style="text-align: center; margin-top: 1em; margin-bottom: 2em;">
-    <a href="/assets/david_magraner_cv.pdf" 
-       download="David_Magraner_CV.pdf" 
+    <a href="/assets/CV-David_Magraner.pdf" 
+       download="CV-David_Magraner.pdf" 
        class="custom-tag download-button">
         
         Download CV <i class="fa fa-download"></i> 
