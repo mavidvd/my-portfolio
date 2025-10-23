@@ -182,7 +182,7 @@ button {
   color: white;
   padding: 0.75rem 2rem;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
   font-size: 1rem;
 }

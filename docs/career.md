@@ -5,7 +5,7 @@
        download="CV-David_Magraner.pdf" 
        class="custom-tag download-button">
         
-        Download CV <i class="fa fa-download"></i> 
+        Download CV 
         
     </a>
 </div>

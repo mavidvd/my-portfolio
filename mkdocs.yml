@@ -21,14 +21,18 @@ plugins: [] # Since searchbox is not included, there will be no searchbox.
 markdown_extensions:
   - attr_list  # This is usually the key fix
   - md_in_html # This is often required if you mix Markdown and HTML like this
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 nav:
   - About Me: index.md
   - My Data Career: career.md
   - Projects: 
-    - ProjectA: project1.md
-    - ProjectB: project2.md
-    - ProjectC: project3.md
+    - From OLTP to OLAP: project1.md
+    - Route Calculator: project2.md
+    - Fiscal Multipliers: project3.md
+    - Invoice Database: project4.md
   - Contact & Links: contact.md
 
 extra:

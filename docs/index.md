@@ -1,17 +1,52 @@
-I'm a Results-driven Data & Analytics professional with 4+ years of experience specializing in Business Intelligence, Data and Machine Learning. My passion for data began with a strong academic foundation, during both my Degree and my Masters in Economics, with extensive focus in Econometrics - Statistical Modelling applied to Economic variables.
-
-My deep dive into Econometrics during my studies, along with other advanced topics like Transportation Economics and Game Theory, cultivated a keen analytical mindset. This quantitative grounding naturally led me to Machine Learning and a career in data. In my Masters' final project I used Vector Autoregression (VAR) to analyze Spanish fiscal multipliers, showing my ability to apply complex statistical models to real-world problems.
-
-In my professional role, I focus on driving efficiency and tangible value, while enhancing a data-driven culture. I have a proven track record of leading projects, including a significant data optimization initiative that reduced estimated AWS costs by 50%, by creating an OLAP database from an OLTP relational database. I'm committed to leveraging data to solve complex business challenges and deliver impactful solutions.
-
-## Skills
-
+<div class="profile-header-flex">
+    
+<figure class="profile-image-container">
+        <img src="/assets/headshot.jpeg" 
+             alt="Your Professional Headshot"
+             class="profile-image" 
+             style="border-radius: 50%; 
+                    width: 250px; 
+                    height: 250px; 
+                    object-fit: cover;
+                    border: 3px solid #E0A465;"> 
+    </figure>
+    
+<div class="profile-text">
 <div class="tag-container">
-    <span class="tag">Data Analysis</span>
-    <span class="tag">Data Wrangling</span>
-    <span class="tag">Machine Learning</span>
-    <span class="tag">Relational Databases</span>
+    <span class="tag">Data Analytics</span>
+    <span class="tag">Data Science & Machine Learning</span>
+    <span class="tag">Analytics Engineering</span>
     </div>
+
+<p>I'm a Results-driven Data & Analytics professional with 4+ years of experience specializing in Business Intelligence, Data and Machine Learning. My passion for data began with a strong academic foundation, during both my Degree and my Masters in Economics, with extensive focus in Econometrics - Statistical Modelling applied to Economic variables.</p>
+
+<p>My deep dive into Econometrics during my studies, along with other advanced topics like Transportation Economics and Game Theory, cultivated a keen analytical mindset. This quantitative grounding naturally led me to Machine Learning and a career in data. In my Masters' final project I used Vector Autoregression (VAR) to analyze Spanish fiscal multipliers, showing my ability to apply complex statistical models to real-world problems.</p> </div> </div>
+<p class="mt-lg">In my professional role, I focus on driving efficiency and tangible value, while enhancing a data-driven culture. I have a proven track record of leading projects, including a significant data optimization initiative that reduced estimated AWS costs by 50%, by creating an OLAP database from an OLTP relational database. I'm committed to leveraging data to solve complex business challenges and deliver impactful solutions.</p>
+
+## Technical Stack
+**Programming:**
+<span class="tag"> :fontawesome-brands-python: Python</span>
+<span class="tag"> :fontawesome-solid-database: SQL</span>
+<span class="tag"> :simple-r: R</span>
+<span class="tag"> :octicons-terminal-16: Bash</span>
+<span class="tag"> :simple-git: Git</span>
+
+**Data Visualisation:**
+<span class="tag"> :material-view-dashboard-outline: Tableau</span>
+<span class="tag"> :simple-metabase: Metabase</span>
+<span class="tag"> :material-chart-scatter-plot-hexbin: Matplotlib</span>
+<span class="tag"> :material-chart-bell-curve-cumulative: Seaborn</span>
+
+**Data Wrangling & ML:**
+<span class="tag"> :simple-pandas: pandas</span>
+<span class="tag"> :simple-numpy: numpy</span>
+<span class="tag"> :octicons-graph-24: statsmodels</span>
+<span class="tag"> :simple-scikitlearn: sklearn</span>
+
+**Cloud & Engineering Services:**
+<span class="tag"> :material-aws: AWS</span>
+<span class="tag"> :simple-googlecloud: GCP</span>
+<span class="tag"> :simple-dbt: dbt</span>
 
 ## Certifications
 

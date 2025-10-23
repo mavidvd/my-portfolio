@@ -80,21 +80,21 @@ h2 {
 
 .download-button {
     /* Color and Background */
-    background-color: var(--md-accent-fg-color); /* The theme's highlight color (e.g., blue/teal) */
+    background-color: #142F5A; /* The theme's highlight color (e.g., blue/teal) */
     color: var(--md-accent-bg-color) !important; /* White text for high contrast */
-    border-color: var(--md-accent-fg-color) !important; /* Matching border color */
-    
+    border-radius: 6px;
+    border: 1px solid #E0A465;
+    color: #f0f0f0 !important;
     /* Size and Font */
     font-size: 1.1em !important;
     padding: 0.75em 1.5em !important;
-    
     /* Ensure icon color matches the text */
     text-shadow: none; 
 }
 
 /* Hover Effect - Optional, but recommended for feedback */
 .download-button:hover {
-    background-color: var(--md-accent-fg-color); /* Keep the background solid */
+    background-color: #09386dff; /* Keep the background solid */
     filter: brightness(1.2); /* Make it slightly brighter on hover */
 }
 
