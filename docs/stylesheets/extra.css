@@ -190,7 +190,7 @@ a.tag {
 
 /* 4. Responsive Breakpoint (VERY IMPORTANT) */
 /* On small screens (like mobile), stack the image and text vertically */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
     .profile-header-flex {
         flex-direction: column; /* Stacks items vertically */
         align-items: center; /* Centers items when stacked */
