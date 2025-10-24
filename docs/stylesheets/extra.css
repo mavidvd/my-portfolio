@@ -1,7 +1,12 @@
 /* Override the theme's responsive font size scaling */
 :root {
   /* Set a fixed base font size for all screens */
-  --md-typeset-font-size: 1.0rem; 
+  --md-typeset-font-size: 14px; 
+}
+
+.md-grid {
+    /* Sets the maximum width to the size of the viewport on small screens */
+    max-width: 100vw;
 }
 
 /* === Custom Logo and Header Styling === */
@@ -12,6 +17,11 @@
                              /* Example: For your current 'slate' scheme, this is typically a deep grey/blue grey.
                                 You can use an online color picker tool on your logo to get the exact HEX code. */
     height: 120px;
+}
+
+.md-header__inner {
+    /* Ensures the header wrapper itself takes up the full available width */
+    max-width: 100%;
 }
 /* --- Center the Logo Horizontally and Vertically --- */
 
@@ -54,8 +64,6 @@
     /* Create the necessary space on the left */
     margin-left: 20rem; /* Keeps your logo block away from the edge */
     margin-right: 40rem;
-    /* Allows the title block to take up available space, but not push the social links */
-    flex-grow: 1; 
 }
 
 /* The social links are usually injected near the header nav or as a standalone option */
@@ -115,7 +123,7 @@
 
 /* Make site name bigger */
 .md-header__title {
-  font-size: 1rem !important;  /* Adjust size as needed */
+  font-size: 14px !important;  /* Adjust size as needed */
   font-weight: 700;            /* Make it bold */
 }
 
@@ -150,7 +158,7 @@ a.tag {
 /* Optional: Adjust on mobile */
 @media screen and (max-width: 76.1875em) {
   .md-header__title {
-    font-size: 1.5rem !important;
+    font-size: 14px !important;
   }
 }
 
@@ -207,11 +215,15 @@ a.tag {
 /* Target screens wider than 1220px (a common breakpoint for wide screens) */
 @media screen and (min-width: 76.25em) {
     /* Targets screens wider than the standard tablet breakpoint (approx. 1220px) */
+    .md-main__inner {
+        max-width: 850px; /* Example: 90rem is 1440px (16px * 90) */
+        /* You can choose any fixed value (e.g., 70rem, 1000px, 65%) */
+    }
     .md-grid {
         max-width: 61rem; /* Increase from the default (e.g., 61rem) */
     }
     :root {
-    --md-typeset-font-size: 1.0rem; /* Keep it the same as the smaller screen setting */
+    --md-typeset-font-size: 14px; /* Keep it the same as the smaller screen setting */
   }
 }
 
