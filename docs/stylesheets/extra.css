@@ -1,3 +1,9 @@
+/* Override the theme's responsive font size scaling */
+:root {
+  /* Set a fixed base font size for all screens */
+  --md-typeset-font-size: 1.0rem; 
+}
+
 /* === Custom Logo and Header Styling === */
 
 /* Set the background color of the entire header */
@@ -118,6 +124,7 @@
     display: flex;
     align: center;
     gap: 8px; /* Space between tags */
+    font-size: 14px;
     margin-bottom: 8px;
 }
 .tag {
@@ -125,7 +132,7 @@
     color: #142F5A;
     padding: 4px 12px;
     border-radius: 16px; /* Pill shape */
-    font-size: 0.9em;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -192,8 +199,25 @@ a.tag {
 /* On small screens (like mobile), stack the image and text vertically */
 @media screen and (max-width: 700px) {
     .profile-header-flex {
-        flex-direction: column; /* Stacks items vertically */
         align-items: center; /* Centers items when stacked */
         flex-direction: row-reverse;
+    }
+}
+
+/* Target screens wider than 1220px (a common breakpoint for wide screens) */
+@media screen and (min-width: 76.25em) {
+    /* Targets screens wider than the standard tablet breakpoint (approx. 1220px) */
+    .md-grid {
+        max-width: 61rem; /* Increase from the default (e.g., 61rem) */
+    }
+    :root {
+    --md-typeset-font-size: 1.0rem; /* Keep it the same as the smaller screen setting */
+  }
+}
+
+@media screen and (min-width: 90em) {
+    /* Targets very wide screens (approx. 1440px) */
+    .md-grid {
+        max-width: 61rem; /* Even wider for large monitors */
     }
 }
