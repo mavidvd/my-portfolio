@@ -59,3 +59,4 @@
 * [Complete Python Bootcamp (Udemy, Apr 2020)](https://www.udemy.com/certificate/UC-1e00b28a-1abd-406e-9640-ee3290cddf01/)
 * [Ironhack Data Analytics Bootcamp (Dec 2020)](https://www.credential.net/8ff67d28-48de-4056-bea4-d4d332b309c5#acc.UjEficsn)
 * [Amplitude Academy - Analytics Foundations (Sep 2025)](https://www.credly.com/badges/5cb393be-dda3-411c-af23-98c36cdfaf3e/linked_in_profile)
+* [dbt - Analytics Engineering Bootcamp](https://www.udemy.com/certificate/UC-67ff5d94-b915-4c41-8de9-d1befd8289da/)
