@@ -13,14 +13,14 @@
     
 <div class="profile-text">
 <div class="tag-container">
-    <span class="tag">Data Analytics</span>
-    <span class="tag">Data Science & Machine Learning</span>
     <span class="tag">Analytics Engineering</span>
+    <span class="tag">Data Science & Machine Learning</span>
+    <span class="tag">Data Analytics</span>
     </div>
 <div class="tag-container">
     <span class="tag">Team Leadership</span>
     <span class="tag">Project Management</span>
-    <span class="tag">Relational Databases</span>
+    <span class="tag">Databases</span>
     </div>
 
 <p>I'm a Results-driven Data & Analytics professional with 4+ years of experience specializing in Business Intelligence, Data and Machine Learning. My passion for data began with a strong academic foundation, during both my Degree and my Masters in Economics, with extensive focus in Econometrics - Statistical Modelling applied to Economic variables.</p>

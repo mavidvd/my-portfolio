@@ -33,14 +33,9 @@ nav:
     - Route Calculator: project2.md
     - Fiscal Multipliers: project3.md
     - Invoice Database: project4.md
-  - Contact & Links: contact.md
-
-extra:
-  social:
-    - icon: fontawesome/brands/linkedin 
-      link: https://www.linkedin.com/in/davidmagraner/ 
-    - icon: fontawesome/brands/github 
-      link: https://github.com/mavidvd
+  - Get in Touch: contact.md
+  - LinkedIn: 'https://www.linkedin.com/in/davidmagraner/'
+  - Github: 'https://github.com/mavidvd'
 
 extra_css:
   - stylesheets/extra.css

@@ -5,3 +5,5 @@
 <span class="tag"> :simple-metabase: Metabase</span>
 
 **Project Location:** Atheneum Partners GmbH
+
+Project Summary coming soon. 
