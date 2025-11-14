@@ -28,11 +28,11 @@ markdown_extensions:
 nav:
   - About Me: index.md
   - My Data Career: career.md
-  - Projects: 
-    - From OLTP to OLAP: project1.md
-    - Route Calculator: project2.md
-    - Fiscal Multipliers: project3.md
-    - Invoice Database: project4.md
+#  - Projects: 
+#    - From OLTP to OLAP: project1.md
+#    - Route Calculator: project2.md
+#    - Fiscal Multipliers: project3.md
+#    - Invoice Database: project4.md
   - Get in Touch: contact.md
   - LinkedIn: 'https://www.linkedin.com/in/davidmagraner/'
   - Github: 'https://github.com/mavidvd'
