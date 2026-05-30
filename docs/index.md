@@ -51,7 +51,13 @@
 **Cloud & Engineering Services:**
 <span class="tag"> :material-aws: AWS</span>
 <span class="tag"> :simple-googlecloud: GCP</span>
+<span class="tag"> :simple-microsoftazure: Azure</span>
+<span class="tag"> :simple-snowflake: Snowflake</span>
 <span class="tag"> :simple-dbt: dbt</span>
+
+**AI & Development Tools:**
+<span class="tag"> :simple-anthropic: Claude Code</span>
+<span class="tag"> :simple-cursor: Cursor</span>
 
 ## Certifications
 
