@@ -28,7 +28,9 @@
 .md-content,
 .md-content__inner {
     padding-top: 0 !important;
-    width: 850px;
+    max-width: 850px;
+    width: 100%;
+    box-sizing: border-box;
 }
 .md-content__inner h1:first-child {
     margin-top: 0;
@@ -57,13 +59,6 @@
 .md-header__inner {
     /* Center the contents (logo container) horizontally */
     justify-content: center;
-}
-
-/* Hide the site name/title next to the logo (since you only want the logo) */
-.md-header__title {
-    /* Create the necessary space on the left */
-    margin-left: 20rem; /* Keeps your logo block away from the edge */
-    margin-right: 40rem;
 }
 
 /* The social links are usually injected near the header nav or as a standalone option */
@@ -106,25 +101,35 @@
     display: none;
 }
 
-/* Move navigation tabs to the right */
-.md-tabs__list {
-  justify-content: flex-end !important;
+/* === Left sidebar navigation === */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    background-color: #142F5A;
+    border-right: 1px solid rgba(224, 164, 101, 0.2);
+  }
+
+  .md-sidebar--primary .md-nav__title {
+    color: #E0A465;
+    font-weight: 700;
+  }
+
+  .md-sidebar--primary .md-nav__link {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .md-sidebar--primary .md-nav__link:hover,
+  .md-sidebar--primary .md-nav__link--active {
+    color: #E0A465;
+  }
+
+  .md-sidebar--primary .md-nav__link--active {
+    font-weight: 600;
+  }
 }
 
-/* Optional: Adjust tab spacing */
-.md-tabs__item {
-  margin-left: 1rem;
-}
-
-/* If site name is showing on the left, this adds space */
+/* Hide top tab bar if present */
 .md-tabs {
-  justify-content: space-between;
-}
-
-/* Make site name bigger */
-.md-header__title {
-  font-size: 14px !important;  /* Adjust size as needed */
-  font-weight: 700;            /* Make it bold */
+  display: none;
 }
 
 /* Tag setup */
@@ -212,19 +217,15 @@ a.tag {
     }
 }
 
-/* Target screens wider than 1220px (a common breakpoint for wide screens) */
+/* Wide screens: sidebar + content (do not cap the whole row at 850px) */
 @media screen and (min-width: 76.25em) {
-    /* Targets screens wider than the standard tablet breakpoint (approx. 1220px) */
-    .md-main__inner {
-        max-width: 850px; /* Example: 90rem is 1440px (16px * 90) */
-        /* You can choose any fixed value (e.g., 70rem, 1000px, 65%) */
-    }
     .md-grid {
-        max-width: 61rem; /* Increase from the default (e.g., 61rem) */
+        max-width: 72rem;
     }
+
     :root {
-    --md-typeset-font-size: 14px; /* Keep it the same as the smaller screen setting */
-  }
+        --md-typeset-font-size: 14px;
+    }
 }
 
 @media screen and (min-width: 90em) {
