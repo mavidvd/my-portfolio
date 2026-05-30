@@ -17,25 +17,23 @@
   }
 }
 
-/* Tablets and phones */
+/* Tablets and phones — tabs live in the drawer; only header shows */
 @media screen and (max-width: 59.9375em) {
+  :root {
+    --md-header-height: 3.5rem;
+  }
+
   .md-header {
-    height: auto;
-    min-height: 4rem;
+    height: var(--md-header-height);
   }
 
   .md-header__button.md-logo img {
-    height: 3.5rem;
+    height: calc(var(--md-header-height) - 1rem);
+    max-height: 2.75rem;
   }
 
-  .md-tabs__list {
-    flex-wrap: wrap;
-    justify-content: center !important;
-    gap: 0.25rem;
-  }
-
-  .md-tabs__item {
-    margin-left: 0;
+  .md-content {
+    padding-top: 1rem;
   }
 
   .profile-header-flex {

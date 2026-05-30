@@ -1,7 +1,9 @@
 /* Override the theme's responsive font size scaling */
 :root {
-  /* Set a fixed base font size for all screens */
-  --md-typeset-font-size: 14px; 
+  --md-typeset-font-size: 14px;
+  /* Must match .md-header height so tabs sit flush and content is not covered */
+  --md-header-height: 5.5rem;
+  --md-tabs-height: 2.4rem;
 }
 
 .md-grid {
@@ -11,12 +13,28 @@
 
 /* === Custom Logo and Header Styling === */
 
-/* Set the background color of the entire header */
+/* Header + tabs share one visual block */
 .md-header {
-    background-color: #142F5A; /* Replace with the HEX code of your desired background color */
-                             /* Example: For your current 'slate' scheme, this is typically a deep grey/blue grey.
-                                You can use an online color picker tool on your logo to get the exact HEX code. */
-    height: 120px;
+    background-color: #142F5A;
+    height: var(--md-header-height);
+}
+
+.md-tabs {
+    background-color: #142F5A;
+    border-top: 1px solid rgba(224, 164, 101, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0;
+    top: var(--md-header-height);
+}
+
+.md-tabs__link {
+    color: rgba(255, 255, 255, 0.85);
+    opacity: 1;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+    color: #E0A465;
 }
 
 .md-header__inner {
@@ -27,14 +45,20 @@
 
 .md-content,
 .md-content__inner {
-    padding-top: 0 !important;
     width: 100%;
     max-width: 850px;
     box-sizing: border-box;
 }
-.md-content__inner h1:first-child {
-    margin-top: 0;
-    padding-top: 0 !important;
+
+/* Space below sticky header + tabs so page titles are not covered */
+@media screen and (min-width: 76.25em) {
+    .md-content {
+        padding-top: 1.25rem;
+    }
+
+    .md-content__inner > h1:first-child {
+        margin-top: 0.5rem;
+    }
 }
 
 .md-content h1, 
@@ -89,10 +113,11 @@
     justify-content: center; /* Horizontal centering (if needed) */
 }
 
-/* Target the logo image itself and set its desired size */
+/* Logo scales with header height */
 .md-header__button.md-logo img {
-    height: 100px;  /* Make the logo bigger. ADJUST THIS VALUE (e.g., 60px, 100px) */
-    width: auto;   /* Maintain aspect ratio */
+    height: calc(var(--md-header-height) - 1.25rem);
+    max-height: 4.25rem;
+    width: auto;
     object-fit: contain;
 }
 
@@ -101,19 +126,19 @@
     display: none;
 }
 
-/* Move navigation tabs to the right */
+/* Center nav tabs under the logo */
+.md-tabs__inner {
+    max-width: 61rem;
+    margin: 0 auto;
+}
+
 .md-tabs__list {
-  justify-content: flex-end !important;
+    justify-content: center !important;
+    flex-wrap: nowrap;
 }
 
-/* Optional: Adjust tab spacing */
 .md-tabs__item {
-  margin-left: 1rem;
-}
-
-/* If site name is showing on the left, this adds space */
-.md-tabs {
-  justify-content: space-between;
+    margin-left: 0;
 }
 
 /* Make site name bigger */
