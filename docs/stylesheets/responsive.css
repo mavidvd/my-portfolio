@@ -17,23 +17,25 @@
   }
 }
 
-/* Tablets and phones — tabs live in the drawer; only header shows */
+/* Tablets and phones */
 @media screen and (max-width: 59.9375em) {
-  :root {
-    --md-header-height: 3.5rem;
-  }
-
   .md-header {
-    height: var(--md-header-height);
+    height: auto;
+    min-height: 4rem;
   }
 
   .md-header__button.md-logo img {
-    height: calc(var(--md-header-height) - 1rem);
-    max-height: 2.75rem;
+    height: 3.5rem;
   }
 
-  .md-content {
-    padding-top: 1rem;
+  .md-tabs__list {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    gap: 0.25rem;
+  }
+
+  .md-tabs__item {
+    margin-left: 0;
   }
 
   .profile-header-flex {

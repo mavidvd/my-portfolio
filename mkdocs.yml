@@ -16,6 +16,7 @@ theme:
     - navigation.sections      # Groups nav in the mobile drawer
     - navigation.path          # Breadcrumbs for orientation on narrow screens
     - navigation.top           # Back-to-top button
+    - header.autohide          # Hides tall header while scrolling (saves mobile space)
     - toc.follow               # Keeps in-page TOC in view while reading
     - content.tooltips
   icon:
