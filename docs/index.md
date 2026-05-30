@@ -3,12 +3,7 @@
 <figure class="profile-image-container">
         <img src="/assets/headshot.jpeg" 
              alt="Your Professional Headshot"
-             class="profile-image" 
-             style="border-radius: 50%; 
-                    width: 250px; 
-                    height: 250px; 
-                    object-fit: cover;
-                    border: 3px solid #E0A465;"> 
+             class="profile-image">
     </figure>
     
 <div class="profile-text">

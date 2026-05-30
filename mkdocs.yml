@@ -11,10 +11,16 @@ theme:
     primary: blue grey
     accent: cyan
   features:
-    - navigation.tabs.sticky # Keeps tabs visible when scrolling
-    - navigation.top         # Back to top button
+    - navigation.tabs          # Top nav; collapses into drawer on small screens
+    - navigation.tabs.sticky   # Keeps tabs visible when scrolling
+    - navigation.sections      # Groups nav in the mobile drawer
+    - navigation.path          # Breadcrumbs for orientation on narrow screens
+    - navigation.top           # Back-to-top button
+    - header.autohide          # Hides tall header while scrolling (saves mobile space)
+    - toc.follow               # Keeps in-page TOC in view while reading
+    - content.tooltips
   icon:
-    repo: fontawesome/fontawesome
+    repo: fontawesome/brands/github
 
 plugins: [] # Since searchbox is not included, there will be no searchbox.
 
@@ -40,3 +46,4 @@ nav:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/cv.css
+  - stylesheets/responsive.css

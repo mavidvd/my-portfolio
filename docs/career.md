@@ -1,8 +1,8 @@
 # Data Career
 
 <div style="text-align: center; margin-top: 1em; margin-bottom: 2em;">
-    <a href="/assets/CV-David_Magraner.pdf" 
-       download="CV-David_Magraner.pdf" 
+    <a href="/assets/CV%20David%20Magraner%20%2726.pdf" 
+       download="CV David Magraner '26.pdf" 
        class="custom-tag download-button">
         
         Download CV 
@@ -11,6 +11,35 @@
 </div>
 
 <div class="cv-page-container">
+
+    <div class="job-box">
+<section class="experience-entry">
+    <div class="header-row">
+        <h3 class="job-title">Analytics Engineer</h3>
+        <span class="location-date">Berlin (2026 - Current)</span>
+    </div>
+
+    <div class="company-subinfo">
+        <span class="company-name">Enpal Energy GmbH</span>
+    </div>
+
+    <p class="skills-line">
+        <span class="skills-label">Skills:</span>
+    <span class="tag">dbt</span>
+    <span class="tag">Azure</span>
+    <span class="tag">AI Agents</span>
+    <span class="tag">Snowflake</span>
+    <span class="tag">SQL</span>
+    </p>
+
+    <ul class="duties-list">
+        <li>Architect and maintain scalable data models using dbt to support core business units including Finance, Venture Development and Operations.</li>
+        <li>Lead cross-systems data QA initiatives to identify and resolve data gaps, ensuring a single source of truth across integrated platforms.</li>
+        <li>Develop high-impact data products for Customer Support and Management, enabling real-time operational and strategic decision-making.</li>
+        <li>Execute complex ad-hoc analyses for maintenance and energy departments, providing rapid insights for dynamic business needs.</li>
+    </ul>
+</section>
+</div>
     
     <div class="job-box">
 <section class="experience-entry">
@@ -32,7 +61,7 @@
     </p>
 
     <ul class="duties-list">
-        <li>Initiated and managed cross-departmental projects to streamline processes, collaborating with Product, Tech, and Operations Excellence.</li>
+<li>Initiated and managed cross-departmental projects to streamline processes, collaborating with Product, Tech, and Operations Excellence.</li>
 <li>Served as the primary point of contact for the BI department, assessing feasibility of new data initiatives and report expansions.</li>
 <li>Automated and maintained the company’s self-service BI tool, Metabase.</li>
 <li>Led continuous training for over 5 new team members on metrics, data retrieval, and ETL pipelines.</li>

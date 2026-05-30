@@ -28,7 +28,9 @@
 .md-content,
 .md-content__inner {
     padding-top: 0 !important;
-    width: 850px;
+    width: 100%;
+    max-width: 850px;
+    box-sizing: border-box;
 }
 .md-content__inner h1:first-child {
     margin-top: 0;
@@ -57,13 +59,6 @@
 .md-header__inner {
     /* Center the contents (logo container) horizontally */
     justify-content: center;
-}
-
-/* Hide the site name/title next to the logo (since you only want the logo) */
-.md-header__title {
-    /* Create the necessary space on the left */
-    margin-left: 20rem; /* Keeps your logo block away from the edge */
-    margin-right: 40rem;
 }
 
 /* The social links are usually injected near the header nav or as a standalone option */
@@ -198,6 +193,14 @@ a.tag {
     margin: 0; /* Resetting the figure's default margin */
 }
 
+.profile-image-container .profile-image {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 3px solid #E0A465;
+}
+
 /* 3. Text Container (to allow it to fill remaining space) */
 .profile-text {
     flex-grow: 1; /* Allows the text to take up the rest of the available width */
@@ -205,10 +208,10 @@ a.tag {
 
 /* 4. Responsive Breakpoint (VERY IMPORTANT) */
 /* On small screens (like mobile), stack the image and text vertically */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 59.9375em) {
     .profile-header-flex {
-        align-items: center; /* Centers items when stacked */
-        flex-direction: row-reverse;
+        align-items: center;
+        flex-direction: column;
     }
 }
 
