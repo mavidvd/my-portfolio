@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Site icon">
+  <!-- Navy ring (drawn as even-odd donut) -->
+  <path
+    fill="#142F5A"
+    fill-rule="evenodd"
+    d="M16 2a14 14 0 1 1 0 28 14 14 0 0 1 0-28zm0 7a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"
+  />
+  <!-- Orange center on top -->
+  <circle cx="16" cy="16" r="7" fill="#E0A465"/>
+</svg>

@@ -95,7 +95,7 @@
     </p>
 
     <ul class="duties-list">
-        <li>Pioneered optimized SQL queries and data models for KPI tables, boosting AWS server efficiency and saving an estimated 50% in AWS costs.</li>
+<li>Pioneered optimized SQL queries and data models for KPI tables, boosting AWS server efficiency and saving an estimated 50% in AWS compute costs.</li>
 <li>Collaborated with Data Engineers to design and develop efficient data warehouse tables, enhancing data retrieval and reporting capabilities.</li>
 <li>Led data projects across multiple departments, such as the C-Suite, HR, Product, streamlining processes and driving data-informed decisions.</li>
 <li>Developed and maintained dashboards and reports for key internal and operational stakeholders on business performance tracking through KPIs.</li>

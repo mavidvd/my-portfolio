@@ -51,9 +51,9 @@
 **Cloud & Engineering Services:**
 <span class="tag"> :material-aws: AWS</span>
 <span class="tag"> :simple-googlecloud: GCP</span>
-<span class="tag"> :simple-microsoftazure: Azure</span>
+<span class="tag"> :material-microsoft-azure-devops: Azure</span>
 <span class="tag"> :simple-snowflake: Snowflake</span>
-<span class="tag"> :simple-dbt: dbt</span>
+<span class="tag"> :material-database-sync-outline: dbt</span>
 
 **AI & Development Tools:**
 <span class="tag"> :simple-anthropic: Claude Code</span>

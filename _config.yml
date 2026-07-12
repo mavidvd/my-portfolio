@@ -1,0 +1,14 @@
+title: David Magraner Villalba
+description: Analytics Engineer · Berlin
+url: "https://davidmagraner.com"
+baseurl: ""
+
+favicon: /assets/img/blue_logo.png
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
