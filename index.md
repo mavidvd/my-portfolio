@@ -17,9 +17,14 @@ title: David Magraner Villalba
 </div>
 
 <div class="about-bio">
-  <p>Results-driven Data & Analytics professional with 4+ years of experience specialising in Business Intelligence, Data Engineering, and Machine Learning. My analytical foundation was built during my Degree and Master's in Economics, with a deep focus on Econometrics and statistical modelling applied to economic variables.</p>
-  <p>Advanced topics like Transportation Economics and Game Theory sharpened my quantitative thinking, leading naturally into Machine Learning and a career in data. My Master's final project applied Vector Autoregression (VAR) to analyse Spanish fiscal multipliers — complex statistical models applied to real-world problems.</p>
-  <p>In practice, I focus on driving efficiency and tangible value while building a data-driven culture. Key achievement: led a data optimisation initiative that reduced estimated AWS costs by 50% by migrating from an OLTP to an OLAP architecture.</p>
+  <p>I build data infrastructure that actually gets used — warehouses, 
+transformation layers, and the BI tooling on top.</p>
+  <p>Four years across Atheneum Partners and Enpal: redesigned a data 
+warehouse from OLTP to OLAP architecture, cut AWS costs by 50%, 
+led a 4-person BI team, and shipped production dbt + Snowflake 
+models across Finance, Operations, and Venture Development.</p>
+  <p>My background is in Economics and Econometrics — which means I 
+think in systems, models, and causality, not just dashboards.</p>
 </div>
 
 <div class="section">
